@@ -1,11 +1,10 @@
-// import { devEnvironment } from "./dev.env";
-// import { prodEnvironment } from "./prod.env";
+import { ProdEnvironment } from "./prod.env";
+import { DevEnvironment } from "./dev.env";
 
+export function getEnvironmentVariables() {
+  if (process.env.NODE_ENV == "production") {
+    return ProdEnvironment;
+  }
 
-// export function getEnvironmentVariables() {
-//         if(process.env.NODE_ENV =='production'){
-//             return prodEnvironment;
-//         }
-
-//         return devEnvironment
-// }
+  return DevEnvironment;
+}
