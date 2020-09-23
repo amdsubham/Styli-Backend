@@ -48,6 +48,7 @@ const modelSchema = new Schema(
     photo: {
       data: Buffer,
       contentType: String,
+      required: true,
     },
   },
 
