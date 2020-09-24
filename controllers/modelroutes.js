@@ -1,4 +1,7 @@
 const Model = require("../models/model");
+const formidable = require("formidable");
+const _ = require("lodash");
+const fs = require("fs");
 
 //Add Model
 exports.addModel = (req, res) => {
