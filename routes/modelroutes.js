@@ -10,5 +10,5 @@ const {
 router.post("/addmodel", addModel);
 router.get("/models", getAllModelsList);
 router.put("/model/:id", updateModel);
-router.get("/filtermodels", filterModels);
+router.post("/filtermodels", filterModels);
 module.exports = router;
